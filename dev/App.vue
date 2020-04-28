@@ -1,7 +1,7 @@
 <template>
 <div>
 	<hello></hello>
-	<helloa></helloa>
+	<t-button></t-button>
 </div>
 </template>
 

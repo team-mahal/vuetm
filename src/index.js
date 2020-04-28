@@ -1,9 +1,9 @@
 import './style.css'
 import Hello from './components/Hello.vue';
-import Helloa from './components/Helloa.vue';
+import TButton from './components/button/TButton.vue';
 
 const components = {
-  Hello,Helloa
+  Hello,TButton
 }
 
 /**
