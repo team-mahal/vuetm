@@ -1,5 +1,5 @@
 import Hello from './components/Hello.vue';
-
+import './style.css'
 /**
  * An install function.
  *
