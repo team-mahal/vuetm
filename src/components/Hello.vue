@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="hello"
-	>
+	<div class="hello">
 		Hello, Rollup Vue!
 	</div>
 </template>

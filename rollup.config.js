@@ -1,7 +1,7 @@
 // import babel from 'rollup-plugin-babel';
 // import commonjs from 'rollup-plugin-commonjs';
 // import livereload from 'rollup-plugin-livereload';
-// import minify from 'rollup-plugin-babel-minify';
+import minify from 'rollup-plugin-babel-minify';
 // import postcss from 'rollup-plugin-postcss';
 // import resolve from '@rollup/plugin-node-resolve';
 // import serve from 'rollup-plugin-serve';
@@ -26,15 +26,11 @@ const sourcemap = true;
 // 	}),
 // 	postcss()
 // ];
-// const pluginsWithMinify = plugins.slice(0);
 
 // const defaultConfig = {
 // 	input: 'src/index.js'
 // };
 
-// if (process.env.NODE_ENV === 'production') {
-// 	pluginsWithMinify.push(minify());
-// }
 
 // if (process.env.NODE_ENV === 'development') {
 // 	defaultConfig.input = 'dev/main.js';
@@ -104,9 +100,15 @@ const plugins = [
     commonjs(),
 ]
 
+const pluginsWithMinify = plugins.slice(0);
+
 if (process.env.NODE_ENV === 'production') {
-    plugins.push(uglify())
+    pluginsWithMinify.push(minify());
 }
+
+// if (process.env.NODE_ENV === 'production') {
+//     plugins.push(uglify())
+// }
 
 if (process.env.NODE_ENV === 'development') {
     plugins.push(livereload('dist'))
@@ -139,7 +141,7 @@ export default {
             file: `dist/${FILE_NAME}.min.js`,
             format: 'iife',
             name: LIBRARY_NAME,
-            sourcemap
+            sourcemap:pluginsWithMinify
         }
     ],
     plugins
