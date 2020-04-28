@@ -1,4 +1,5 @@
-.ttttttttttttttt{
-	background: red;
-	color: #fff;
-}
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
