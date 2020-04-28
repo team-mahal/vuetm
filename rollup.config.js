@@ -19,7 +19,6 @@ const defaultConfig = {
     input: 'src/index.js'
 };
 
-
 const plugins = [
     vue(),
     babel({
@@ -91,32 +90,3 @@ let config =  [
 ];
 
 export default config
- 
-// export default {
-//     input: 'dev/main.js',
-//     output: [
-//         {
-//             file: `dist/${FILE_NAME}.common.js`,
-//             format: 'cjs',
-//             sourcemap
-//         },
-//         {
-//             file: `dist/${FILE_NAME}.es.js`,
-//             format: 'es',
-//             sourcemap
-//         },
-//         {
-//             file: `dist/${FILE_NAME}.js`,
-//             format: 'iife',
-//             name: LIBRARY_NAME,
-//             sourcemap
-//         },
-//         {
-//             file: `dist/${FILE_NAME}.min.js`,
-//             format: 'iife',
-//             name: LIBRARY_NAME,
-//             sourcemap:pluginsWithMinify
-//         }
-//     ],
-//     plugins
-// }
