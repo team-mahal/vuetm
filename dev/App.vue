@@ -1,7 +1,10 @@
 <template>
 <div>
-	<hello></hello>
-	<t-button></t-button>
+	<t-button>Primary</t-button>
+	<t-button>Primary</t-button>
+	<t-button>Primary</t-button>
+	<t-button>Primary</t-button>
+	<t-button>Primary</t-button>
 </div>
 </template>
 

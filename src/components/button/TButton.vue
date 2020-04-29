@@ -1,11 +1,11 @@
 <template>
 	<button :type="nativeType" :disabled="loading" :class="{
-		[`btn-${type}`]: true,
+		[`bg-${type}`]: true,
 		'btn-block': block,
 		'btn-lg': large,
 		'btn-loading': loading,
 		'opacity-50': loading
-	}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+	}" class="bg-green-500 hover:bg-green-900 shadow-xl px-5 py-2 rounded text-white"
 	>
 		<slot />
 	</button>
@@ -15,6 +15,10 @@
 export default {
 	name: 'TButton',
 	props: {
+		color:{
+			type: String,
+			default: 'green-500'
+		},
 		type: {
 			type: String,
 			default: 'primary'
