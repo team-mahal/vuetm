@@ -2,9 +2,40 @@ import './style.css'
 import Hello from './components/Hello.vue';
 import TButton from './components/button/TButton.vue';
 
+
+//function page (path) {
+  //return () => import(/* webpackChunkName: '' */ `~/pages/${path}`).then(m => m.default || m)
+//}
+
 const components = {
   Hello,TButton
 }
+
+
+// Components that are registered globaly.
+// [
+//   Card,
+//   Child,
+//   Button,
+//   Model,
+//   Checkbox,
+//   HasError,
+//   AlertError,
+//   AlertSuccess
+// ].forEach(Component => {
+//   Vue.component(Component.name, Component)
+// })
+
+// const requireContext = require.context('~/layouts', false, /.*\.vue$/)
+
+// const layouts = requireContext.keys()
+//   .map(file =>
+//     [file.replace(/(^.\/)|(\.vue$)/g, ''), requireContext(file)]
+//   )
+//   .reduce((components, [name, component]) => {
+//     components[name] = component.default || component
+//     return components
+//   }, {})
 
 /**
  * An install function.
