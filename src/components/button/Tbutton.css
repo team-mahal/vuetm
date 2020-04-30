@@ -1,0 +1,137 @@
+.btn{
+	@extend .shadow-xl;
+	@extend .text-white;
+}
+.btn-md{
+	@extend .px-5;
+	@extend .py-2;
+}
+.btn-sm{
+	@extend .px-3;
+	@extend .py-1;
+}
+.btn-lg{
+	@extend .px-8;
+	@extend .py-3;
+}
+.secondary{
+	@extend .bg-gray-500;
+}
+.danger{
+	@extend .bg-red-500;
+}
+.warning{
+	@extend .bg-orange-500;
+}
+.info{
+	@extend .bg-yellow-500;
+}
+.primary{
+	@extend .bg-green-500;
+}
+.inverse{
+	@extend .bg-teal-500;
+}
+.success{
+	@extend .bg-blue-500;
+}
+.light{
+	@extend .bg-indigo-500;
+}
+.purple{
+	@extend .bg-purple-500;
+}
+.pink{
+	@extend .bg-pink-500;
+}
+
+.outline-secondary{
+	@extend .text-gray-500;  
+	@extend .border;
+	@extend .border-gray-500;
+}
+.outline-secondary:hover{
+	@extend .bg-gray-500;
+	@extend .text-white;
+}
+.outline-danger{
+	@extend .text-red-500;  
+	@extend .border;
+	@extend .border-red-500;
+}
+.outline-danger:hover{
+	@extend .bg-red-500;
+	@extend .text-white;
+}
+.outline-warning{
+	@extend .text-orange-500;  
+	@extend .border;
+	@extend .border-orange-500;
+}
+.outline-warning:hover{
+	@extend .bg-orange-500;
+	@extend .text-white;
+}
+.outline-info{
+	@extend .text-yellow-500;  
+	@extend .border;
+	@extend .border-yellow-500;
+}
+.outline-info:hover{
+	@extend .bg-yellow-500;
+	@extend .text-white;
+}
+.outline-primary{
+	@extend .text-green-500;  
+	@extend .border;
+	@extend .border-green-500;
+}
+.outline-primary:hover{
+	@extend .bg-green-500;
+	@extend .text-white;
+}
+.outline-inverse{
+	@extend .text-teal-500;  
+	@extend .border;
+	@extend .border-teal-500;
+}
+.outline-inverse:hover{
+	@extend .bg-teal-500;
+	@extend .text-white;
+}
+.outline-success{
+	@extend .text-blue-500;  
+	@extend .border;
+	@extend .border-blue-500;
+}
+.outline-success:hover{
+	@extend .bg-blue-500;
+	@extend .text-white;
+}
+.outline-light{
+	@extend .text-indigo-500;  
+	@extend .border;
+	@extend .border-indigo-500;
+}
+.outline-light:hover{
+	@extend .bg-indigo-500;
+	@extend .text-white;
+}
+.outline-purple{
+	@extend .text-purple-500;  
+	@extend .border;
+	@extend .border-purple-500;
+}
+.outline-purple:hover{
+	@extend .bg-purple-500;
+	@extend .text-white;
+}
+.outline-pink{
+	@extend .text-pink-500;  
+	@extend .border;
+	@extend .border-pink-500;
+}
+.outline-pink:hover{
+	@extend .bg-pink-500;
+	@extend .text-white;
+}

@@ -21,28 +21,28 @@
 
 	<div class="my-2 text-center">
 		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
-		<t-button type="outline-secondary">Secondary</t-button>
+		<t-button type="outline-danger">Secondary</t-button>
+		<t-button type="outline-warning">Secondary</t-button>
+		<t-button type="outline-info">Secondary</t-button>
+		<t-button type="outline-primary">Secondary</t-button>
+		<t-button type="outline-inverse">Secondary</t-button>
+		<t-button type="outline-success">Secondary</t-button>
+		<t-button type="outline-light">Secondary</t-button>
+		<t-button type="outline-purple">Secondary</t-button>
+		<t-button type="outline-pink">Secondary</t-button>
 	</div>
 
 	<div class="my-2 text-center">
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
-		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
+		<t-button type="outline-secondary" pill>Secondary</t-button>
+		<t-button type="outline-danger" pill>Secondary</t-button>
+		<t-button type="outline-warning" pill>Secondary</t-button>
+		<t-button type="outline-info" pill>Secondary</t-button>
+		<t-button type="outline-primary" pill>Secondary</t-button>
+		<t-button type="outline-inverse" pill>Secondary</t-button>
+		<t-button type="outline-success" pill>Secondary</t-button>
+		<t-button type="outline-light" pill>Secondary</t-button>
+		<t-button type="outline-purple" pill>Secondary</t-button>
+		<t-button type="outline-pink" pill>Secondary</t-button>
 	</div>
 
 	<div class="my-2 text-center">
