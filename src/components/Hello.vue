@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-green-700">
+	<div>
 		Hello, Rollup Vue!
 		Hello, Rollup Vue!
 	</div>
