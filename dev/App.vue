@@ -17,6 +17,24 @@
 	<t-button type="primary">Primary</t-button>
 	<t-button type="primary">Primary</t-button>
 	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
+	<t-button type="primary">Primary</t-button>
 </div>
 </template>
 

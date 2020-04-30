@@ -3,7 +3,7 @@
 			[`${type}`]: true,
 			'btn-block': block,
 			'btn-lg': large,
-			'btn-loading': loading,
+			'btn-loading ': loading,
 			'opacity-50': loading
 		}">
 		<slot />

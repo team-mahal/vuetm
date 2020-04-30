@@ -8,10 +8,22 @@ import replace from '@rollup/plugin-replace'
 import minify from 'rollup-plugin-babel-minify';
 import postcss from 'rollup-plugin-postcss'
 import path from 'path'
+import pkg from './package.json';
+
+const banner = `/*!
+ * ${pkg.name}
+ * ${pkg.description}
+ *
+ * @version v${pkg.version}
+ * @author ${pkg.author}
+ * @homepage ${pkg.homepage}
+ * @repository ${pkg.repository.url}
+ * @license ${pkg.license}
+ */`;
 
 const LIBRARY_NAME = 'vuetm';
 const FILE_NAME = 'vuetm';
-const sourcemap = true;
+const sourcemap = false;
 
 let postcssconfig = require('./postcss.config');
 
@@ -28,7 +40,7 @@ const plugins = [
         'process.env.NODE_ENV': JSON.stringify( 'production' )
     }),
     nodeResolve({browser: true}),
-    commonjs(),
+    commonjs({ sourceMap: false }),
     postcss({extract: path.resolve(`dist/${FILE_NAME}.css`,)})
 ];
 
@@ -45,7 +57,7 @@ if (process.env.NODE_ENV === 'development') {
         include: ['src/**', 'dev/**']
     };
 
-    plugins.push(livereload('dist'))
+    plugins.push(livereload({watch: 'dist',verbose: false}))
     plugins.push(serve({
         contentBase: "",
         open: true
@@ -57,33 +69,52 @@ let config =  [
     Object.assign({}, defaultConfig, {
         output: [
             {
+                banner,
                 file: `dist/${FILE_NAME}.common.js`,
                 format: 'cjs',
-                sourcemap
+                sourcemap,
+                treeshake: false,
             },
             {
+                banner,
                 file: `dist/${FILE_NAME}.es.js`,
                 format: 'es',
-                sourcemap
+                sourcemap,
+                treeshake: false,
             }
         ],
         plugins
     }),
     Object.assign({}, defaultConfig, {
         output: {
+            banner,
             file: `dist/${FILE_NAME}.js`,
             format: 'iife',
             name: LIBRARY_NAME,
-            sourcemap
+            sourcemap,
+            treeshake: true,
         },
         plugins
     }),
     Object.assign({}, defaultConfig, {
         output: {
+            banner,
+            file: `dist/${FILE_NAME}.umd.min.js`,
+            format: 'umd',
+            name: LIBRARY_NAME,
+            sourcemap,
+            treeshake: true,
+        },
+        plugins
+    }),
+    Object.assign({}, defaultConfig, {
+        output: {
+            banner,
             file: `dist/${FILE_NAME}.min.js`,
             format: 'iife',
             name: LIBRARY_NAME,
-            sourcemap
+            sourcemap,
+            treeshake: false,
         },
         plugins: pluginsWithMinify
     })

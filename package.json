@@ -1,7 +1,7 @@
 {
 	"name": "vuetm",
 	"version": "1.0.0",
-	"description": "",
+	"description": "vuetm",
 	"main": "dist/vuetm.cjs.js",
 	"module": "dist/vuetm.esm.js",
 	"browser": "dist/vuetm.umd.js",
@@ -9,7 +9,8 @@
 		"build": "cross-env NODE_ENV=production rollup -c",
 		"dev": "cross-env NODE_ENV=development rollup -cw",
 		"test": "node test/test.js",
-		"pretest": "npm run build"
+		"pretest": "npm run build",
+		"prepare": "npm-run-all clean build"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.8.4",
@@ -44,5 +45,10 @@
 	"keywords": [],
 	"author": "jualahmed <md.jual.ah@gmail.com>",
 	"license": "MIT",
-	"dependencies": {}
+	"dependencies": {},
+	"repository": {
+	    "type": "git",
+	    "url": "git+https://github.com/"
+	},
+	"homepage": "https://github.com/"
 }
