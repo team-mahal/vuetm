@@ -42,11 +42,19 @@
 		<t-button type="outline-success" pill>Secondary</t-button>
 		<t-button type="outline-light" pill>Secondary</t-button>
 		<t-button type="outline-purple" pill>Secondary</t-button>
-		<t-button type="outline-pink" pill>Secondary</t-button>
 	</div>
 
 	<div class="my-2 text-center">
-		<button class="m-3 bg-gray-500 hover:bg-gray-400 text-white font-semibold py-2 px-5 border-b-4 border-gray-700 hover:border-gray-500 rounded">3D Button</button>
+		<t-button type="outline-secondary" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
+		<t-button type="outline-pink" pill d3>Secondary</t-button>
 	</div>
 </div>
 </template>
