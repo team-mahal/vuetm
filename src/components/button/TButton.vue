@@ -5,6 +5,7 @@
 			[`btn-${size}`]: true,
 			'btn-loading': loading,
 			'rounded': squared,
+			'opacity-50 cursor-not-allowed': disabled,
 			'border-b-4': d3,
 			'rounded-full font-bold ': pill,
 			'opacity-50': loading
@@ -46,6 +47,10 @@ export default {
 			default: false
 		},
 		d3: {
+			type: Boolean,
+			default: false
+		},
+		disabled: {
 			type: Boolean,
 			default: false
 		}
