@@ -3,12 +3,53 @@
 @tailwind components;
 
 @tailwind utilities;
-.primary{
-	@extend .bg-green-500;
-	@extend .text-white;
-	@extend .hover:bg-green-600;
+.btn{
 	@extend .shadow-xl;
+	@extend .rounded;
+	@extend .text-white;
+}
+.btn-md{
 	@extend .px-5;
 	@extend .py-2;
-	@extend .rounded;
+}
+.btn-sm{
+	@extend .px-3;
+	@extend .py-1;
+}
+.btn-lg{
+	@extend .px-8;
+	@extend .py-3;
+}
+.btn:hover{
+	@extend .bg-green-400;
+}
+.secondary{
+	@extend .bg-gray-500;
+}
+.danger{
+	@extend .bg-red-500;
+}
+.warning{
+	@extend .bg-orange-500;
+}
+.info{
+	@extend .bg-yellow-500;
+}
+.primary{
+	@extend .bg-green-500;
+}
+.inverse{
+	@extend .bg-teal-500;
+}
+.success{
+	@extend .bg-blue-500;
+}
+.light{
+	@extend .bg-indigo-500;
+}
+.purple{
+	@extend .bg-purple-500;
+}
+.pink{
+	@extend .bg-pink-500;
 }

@@ -1,12 +1,12 @@
 <template>
-	<button :type="nativeType" :disabled="loading" :class="{
+	<button :type="nativeType" :disabled="loading" class="btn" :class="{
 			[`${type}`]: true,
-			'btn-block': block,
-			'btn-lg': large,
+			'block w-full': block,
+			[`btn-${size}`]: true,
 			'btn-loading ': loading,
 			'opacity-50': loading
 		}">
-		<slot />
+		<slot/>
 	</button>
 </template>
 
@@ -18,32 +18,22 @@ export default {
 			type: String,
 			default: 'primary'
 		},
-
 		nativeType: {
 			type: String,
 			default: 'submit'
 		},
-
 		loading: {
 			type: Boolean,
 			default: false
 		},
-
 		block: {
 			type: Boolean,
 			default: false
 		},
-
-		large: {
-			type: Boolean,
-			default: false
+		size: {
+			type: String,
+			default: 'md'
 		}
 	}
 }
 </script>
-
-<style>
-.primary{
-	@extend .bg-green-500;
-}
-</style>

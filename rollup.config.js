@@ -69,52 +69,33 @@ let config =  [
     Object.assign({}, defaultConfig, {
         output: [
             {
-                banner,
                 file: `dist/${FILE_NAME}.common.js`,
                 format: 'cjs',
                 sourcemap,
-                treeshake: false,
             },
             {
-                banner,
                 file: `dist/${FILE_NAME}.es.js`,
                 format: 'es',
                 sourcemap,
-                treeshake: false,
             }
         ],
         plugins
     }),
     Object.assign({}, defaultConfig, {
         output: {
-            banner,
             file: `dist/${FILE_NAME}.js`,
             format: 'iife',
             name: LIBRARY_NAME,
             sourcemap,
-            treeshake: true,
         },
         plugins
     }),
     Object.assign({}, defaultConfig, {
         output: {
-            banner,
-            file: `dist/${FILE_NAME}.umd.min.js`,
-            format: 'umd',
-            name: LIBRARY_NAME,
-            sourcemap,
-            treeshake: true,
-        },
-        plugins
-    }),
-    Object.assign({}, defaultConfig, {
-        output: {
-            banner,
             file: `dist/${FILE_NAME}.min.js`,
             format: 'iife',
             name: LIBRARY_NAME,
             sourcemap,
-            treeshake: false,
         },
         plugins: pluginsWithMinify
     })
