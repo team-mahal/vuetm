@@ -5,7 +5,6 @@
 @tailwind utilities;
 .btn{
 	@extend .shadow-xl;
-	@extend .rounded;
 	@extend .text-white;
 }
 .btn-md{
@@ -19,9 +18,6 @@
 .btn-lg{
 	@extend .px-8;
 	@extend .py-3;
-}
-.btn:hover{
-	@extend .bg-green-400;
 }
 .secondary{
 	@extend .bg-gray-500;
@@ -52,4 +48,14 @@
 }
 .pink{
 	@extend .bg-pink-500;
+}
+
+.outline-secondary{
+	@extend .text-gray-500;  
+	@extend .border;
+	@extend .border-gray-500;
+}
+.outline-secondary:hover{
+	@extend .bg-gray-500;
+	@extend .text-white;
 }

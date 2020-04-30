@@ -10,12 +10,19 @@
 		<t-button type="success">Success</t-button>
 		<t-button type="light">Light</t-button>
 		<t-button type="purple">Purple</t-button>
-		<t-button type="pink">Pink</t-button>
+		<t-button type="pink" squared>Pink</t-button>
 	</div>
 
-	<t-button type="pink" size="sm">Small Button</t-button>
-	<t-button type="pink">Default Button</t-button>
-	<t-button type="pink" size="lg">Large Button</t-button>
+	<div>
+		<t-button type="pink" size="sm">Small Button</t-button>
+		<t-button type="pink">Default Button</t-button>
+		<t-button type="pink" size="lg">Large Button</t-button>
+	</div>
+
+	<div>
+		<t-button type="outline-secondary">Secondary</t-button>
+		<t-button type="outline-secondary" pill class="font-extrabold">Secondary</t-button>
+	</div>
 </div>
 </template>
 

@@ -3,7 +3,9 @@
 			[`${type}`]: true,
 			'block w-full': block,
 			[`btn-${size}`]: true,
-			'btn-loading ': loading,
+			'btn-loading': loading,
+			'rounded': squared,
+			'rounded-full font-bold ': pill,
 			'opacity-50': loading
 		}">
 		<slot/>
@@ -33,6 +35,14 @@ export default {
 		size: {
 			type: String,
 			default: 'md'
+		},
+		pill: {
+			type: Boolean,
+			default: false
+		},
+		squared: {
+			type: Boolean,
+			default: false
 		}
 	}
 }
