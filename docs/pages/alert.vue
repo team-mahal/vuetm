@@ -1,11 +1,9 @@
 <template>
-<div>
-	Landing Page
-</div>
+	<p>Aleart</p>
 </template>
 
 <script>
 	export default {
-		layout: 'docs'
+		
 	}
 </script>
