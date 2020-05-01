@@ -10,7 +10,8 @@
 		"dev": "cross-env NODE_ENV=development rollup -cw",
 		"test": "node test/test.js",
 		"pretest": "npm run build",
-		"prepare": "npm-run-all clean build"
+		"prepare": "npm-run-all clean build",
+		"ddev": "cross-env NODE_ENV=docs nuxt dev -c docs/nuxt.config.js"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.8.4",
@@ -23,6 +24,8 @@
 		"@vue/compiler-sfc": "^3.0.0-beta.4",
 		"autoprefixer": "^9.7.6",
 		"cross-env": "^7.0.2",
+		"highlight.js": "^10.0.1",
+		"marked": "^1.0.0",
 		"postcss": "^7.0.27",
 		"postcss-csso": "^4.0.0",
 		"postcss-extend": "^1.0.5",
@@ -46,7 +49,9 @@
 	"keywords": [],
 	"author": "jualahmed <md.jual.ah@gmail.com>",
 	"license": "MIT",
-	"dependencies": {},
+	"dependencies": {
+		"nuxt": "^2.12.2"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/"
