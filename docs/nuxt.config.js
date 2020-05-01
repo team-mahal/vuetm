@@ -80,6 +80,10 @@ module.exports = {
 		]
 	},
 
+	plugins: [
+		'~/plugins/vuetm'
+	],
+
 	css: [
 		// '@assets/css/docs.min.css',
 		// '@assets/scss/styles.scss'
