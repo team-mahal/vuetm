@@ -1,5 +1,5 @@
 <template>
-<div id="sidebar" class="h-screen w-64 bg-gray-100 text-white shadow p-3">
+<div id="sidebar" class="min-h-screen w-64 bg-gray-100 text-white shadow p-3">
     <ul class="list-reset w-full">
         <li class="my-2 md:my-0">   
             <router-link to="/#" class="py-2 pl-1 text-gray-600 no-underline hover:text-green-200 flex items-center">
