@@ -1,4 +1,5 @@
-<div>
+<template>
+<div class="min-h-screen">
 	<div class="my-2 text-center">
 		<t-button type="secondary">Secondary</t-button>
 		<t-button type="danger">Danger</t-button>
@@ -77,3 +78,11 @@
 		<t-button type="primary" disabled squared>Secondary</t-button>
     </div>
 </div>
+</template>
+
+<script>
+	export default{
+		
+	}
+</script>
+
