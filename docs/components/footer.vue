@@ -1,5 +1,5 @@
 <template>
-<footer class="shadow-lg ml-64">
+<footer class="shadow-lg">
 		<div class="container bg-grey-lighter p-8">
     <div class="sm:flex mb-4">
   <div class="sm:w-1/4 h-auto">
@@ -64,7 +64,6 @@
 
 <script>
 export default {
-	name: 'BVFooter',
 	props: {
 		
 	},
