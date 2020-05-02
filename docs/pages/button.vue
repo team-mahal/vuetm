@@ -1,5 +1,5 @@
 <template>
-<div class="min-h-screen">
+<div>
 	<div class="my-2 text-center">
 		<t-button type="secondary">Secondary</t-button>
 		<t-button type="danger">Danger</t-button>

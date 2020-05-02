@@ -1,10 +1,14 @@
 <template>
-	<div>
-		<Header/>
+<div>
+	<Header/>
+	<div class="flex flex-wrap">
 		<Sidebar/>
-		<nuxt />
-		<Footer class="ml-64"/>
+		<div class="p-4">
+			<nuxt/>
+		</div>
 	</div>
+	<Footer/>
+</div>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
-<div class="bg-white">
-    <div class="w-full flex flex-wrap shadow py-2">
+<div class="bg-gray-100 shadow-lg">
+    <div class="w-full py-2">
         <nav id="header1" class="w-auto flex-1 border-b-1 border-gray-300 order-1 lg:order-2">
             <div class="flex h-full justify-between items-center">
                 <!--Search-->

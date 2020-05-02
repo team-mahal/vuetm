@@ -1,5 +1,5 @@
 <template>
-<footer class="shadow-lg">
+<footer class="border border-t-2 bg-gray-100">
 		<div class="container bg-grey-lighter p-8">
     <div class="sm:flex mb-4">
   <div class="sm:w-1/4 h-auto">
