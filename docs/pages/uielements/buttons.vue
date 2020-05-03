@@ -1,6 +1,6 @@
 <template>
 <div>
-	<Example :component="progress" :code="progresscode"/>
+	<Example :component="progress" :code="progresscode" vertical/>
 	<div class="my-2 text-center">
 		<t-button type="secondary">Secondary</t-button>
 		<t-button type="danger">Danger</t-button>

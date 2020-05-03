@@ -1,7 +1,7 @@
 <template>
     <div class="codeview">
         <div v-if="title" class="codeview-title">{{ title }}</div>
-        <figure class="highlight" :class="figureClasses">
+        <figure class="highlight " :class="figureClasses">
             <div class="button-container">
                 <button class="button is-text is-small copy-code">Copy</button>
                 <button
@@ -10,7 +10,7 @@
                     @click="isExpanded = false">
                     Hide
                 </button>
-            </div>
+            </div> 
             <pre v-highlight><code :class="lang">{{ code }}</code></pre>
             <button
                 v-if="!isExpanded && !expanded"
