@@ -22,7 +22,6 @@
                         <div class="flex">
                         	<template> 
     							<button id="userButton" class="flex items-center focus:outline-none mr-3">
-                                    <avatar username="aaaaa" backgroundColor="#276749" :size="30"></avatar>
                                     <span class="hidden md:inline-block ml-1">Hi, aaaaaaaa</span>
                                 </button>
     						</template>

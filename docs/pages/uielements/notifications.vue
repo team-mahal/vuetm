@@ -1,6 +1,5 @@
 <template>
 <div>
-	
 	<div class="flex">
 	  <div class="m-auto">
 	    <div class="bg-white rounded-lg border-gray-300 border p-3 shadow-lg">
@@ -184,6 +183,6 @@
 
 <script>
 	export default {
-
+		layout: 'default',
 	}
 </script>

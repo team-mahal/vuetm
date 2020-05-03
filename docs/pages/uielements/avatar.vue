@@ -50,11 +50,6 @@
     </div>
   </div>
 </section>
-
-<section class="flex flex-wrap">
-    <div class="p-2"><avatar username="Jual Ahmed" backgroundColor="#276749" :size="40"></avatar></div>
-    <div class="p-2"><avatar username="lovely avatar" backgroundColor="#A0AEC0" :size="40"></avatar></div>
-</section>
 </div>
 </template>
 

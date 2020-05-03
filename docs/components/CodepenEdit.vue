@@ -7,7 +7,6 @@
         rel="noopener">
         <button class="button is-text is-small">
             <span>CodePen</span>
-            <b-icon icon="open-in-new" size="is-small"/>
         </button>
 
         <input
@@ -19,6 +18,7 @@
 
 <script>
 // import dataTest from '!!raw-loader!./sample.json'
+// console.log(dataTest);
 let dataTest = 'dfsfsdf'
     // import notificationscode from '!!raw-loader!./notifications'
 

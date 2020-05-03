@@ -1,8 +1,6 @@
 <template>
 <div>
-	
-	<Example :component="notifications" :code="notificationscode" vertical/>
-
+	<Example :component="progress" :code="progresscode"/>
 	<div class="my-2 text-center">
 		<t-button type="secondary">Secondary</t-button>
 		<t-button type="danger">Danger</t-button>
@@ -84,13 +82,13 @@
 </template>
 
 <script>
-	import notifications from './notifications'
-	import notificationscode from '!!raw-loader!./notifications'
+	import progress from './progress'
+	import progresscode from '!!raw-loader!./progress'
 	export default{
 		layout: 'default',
 		  data() {
             return {
-                notifications,notificationscode
+                progress,progresscode
             }
         }
 	}

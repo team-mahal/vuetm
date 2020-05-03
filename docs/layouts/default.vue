@@ -1,8 +1,8 @@
 <template>
 <div>
 	<Header/>
-	<div class="flex flex-wrap">
-		<Sidebar/>
+	<div class="flex">
+		<Sidebar class="w-64"/>
 		<div class="p-4">
 			<nuxt/>
 		</div>
