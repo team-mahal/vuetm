@@ -1,5 +1,8 @@
 <template>
 <div>
+	
+	<Example :component="notifications" :code="notificationscode" vertical/>
+
 	<div class="my-2 text-center">
 		<t-button type="secondary">Secondary</t-button>
 		<t-button type="danger">Danger</t-button>
@@ -81,8 +84,15 @@
 </template>
 
 <script>
+	import notifications from './notifications'
+	import notificationscode from '!!raw-loader!./notifications'
 	export default{
-		layout: 'default'
+		layout: 'default',
+		  data() {
+            return {
+                notifications,notificationscode
+            }
+        }
 	}
 </script>
 
