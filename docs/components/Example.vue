@@ -18,8 +18,8 @@
                 <component :is="component"/>
             </div>
             <CodeView
-                :code="code"
                 class="w-1/2"
+                :code="code"
                 bordered
                 codepen
             />
@@ -96,6 +96,17 @@ export default {
     color: #585260;
     padding: .5em;
 }
+.codeview .highlight {
+    position: relative;
+    text-align: left!important;
+    height: 3.25rem;
+}
+.highlight {
+    font-weight: 400;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
 .codeview .highlight pre code {
     overflow: hidden;
     max-height: 600px;
@@ -120,11 +131,22 @@ code {
 .codeview .highlight {
     position: relative;
     text-align: left!important;
+    height: 3.25rem;
 }
 .highlight {
     font-weight: 400;
     max-width: 100%;
     overflow: hidden;
     padding: 0;
+}
+.codeview .highlight .button-container {
+    position: absolute;
+    display: inline-flex;
+    background: transparent;
+    border-radius: 4px 4px 0 0;
+    top: .25rem;
+    right: 1.35rem;
+    padding: 0 0 0 8px;
+    vertical-align: top;
 }
 </style>
