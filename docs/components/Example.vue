@@ -1,30 +1,30 @@
 <template>
-    <section class="example-section">
-        <p :id="`${slugifiedTitle}`" class="title is-4">
+    <section>
+        <p :id="`${slugifiedTitle}`">
             <router-link v-if="title" :to="`#${slugifiedTitle}`">#</router-link>
             {{ title }}
         </p>
-        <div class="content">
+        <div>
             <slot/>
         </div>
-
+        <div class="button-container w-1/2">
+            <CodepenEdit :code="code" :title="title"/>
+        </div>
         <div
             v-if="code && component"
-            class="example"
+            class="flex relative border-2"
             :class="{ 'flex': vertical }">
-            <div class="button-container">
-                <CodepenEdit :code="code" :title="title"/>
-            </div>
-            <div class="example-component" :class="{ 'is-paddingless': paddingless }">
+            <div class="w-1/2" :class="{ 'is-paddingless': paddingless }">
                 <component :is="component"/>
             </div>
             <CodeView
                 :code="code"
+                class="w-1/2"
                 bordered
                 codepen
             />
         </div>
-        <hr class="is-medium">
+        <hr>
     </section>
 </template>
 
@@ -63,7 +63,7 @@ export default {
 .codeview .highlight.is-expanded {
     height: auto;
 }
-.codeview .highlight .codeview-hidecode, .codeview .highlight .codeview-showcode {
+.codeview-showcode {
     display: flex;
     bottom: 0;
     left: 0;
@@ -107,6 +107,10 @@ export default {
     overflow: hidden;
     padding: 0;
 }
+.codeview .highlight pre code {
+    overflow: hidden;
+    max-height: 600px;
+}
 pre code {
     background-color: transparent;
     color: currentColor;
@@ -123,16 +127,7 @@ code {
     font-weight: 400;
     padding: .25em .5em;
 }
-.example .button-container {
-    position: absolute;
-    display: inline-flex;
-    background: #ffdd57;
-    border-radius: 4px 4px 0 0;
-    bottom: 100%;
-    right: -1px;
-    padding: 0 0 0 8px;
-    vertical-align: top;
-}
+
 .codeview .highlight {
     position: relative;
     text-align: left!important;
@@ -151,49 +146,6 @@ code {
     border-radius: 4px 4px 0 0;
     top: .25rem;
     right: 1.35rem;
-    padding: 0 0 0 8px;
-    vertical-align: top;
-}
-.example.is-vertical .codeview, .example.is-vertical .example-component {
-    width: 50%;
-    }.example.is-vertical .codeview {
-    display: flex;
-    flex-direction: column;
-    border-top: 0;
-    border-left: 1px solid #ffdd57;
-}
-.example .button-container .button:not(:last-child) {
-    margin-right: .5rem;
-}
-.example .button-container .button {
-    display: flex;
-    align-items: flex-end;
-    font-size: 11px;
-    padding: 0;
-    text-decoration: none;
-}
-    .example {
-    position: relative;
-    display: flex;
-    border: 1px solid #ffdd57;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    color: rgba(0,0,0,.7);
-}
-.example:not(:first-child) {
-    margin-top: 2rem;
-}
-.example:not(:last-child) {
-    margin-bottom: 1.5rem;
-}
-.example .button-container {
-    position: absolute;
-    display: inline-flex;
-    background: #ffdd57;
-    border-radius: 4px 4px 0 0;
-    bottom: 100%;
-    right: -1px;
     padding: 0 0 0 8px;
     vertical-align: top;
 }

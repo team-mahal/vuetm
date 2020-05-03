@@ -2,11 +2,10 @@
     <div class="codeview">
         <div v-if="title" class="codeview-title">{{ title }}</div>
         <figure class="highlight " :class="figureClasses">
-            <div class="button-container">
-                <button class="button is-text is-small copy-code">Copy</button>
+            <div class="text-right">
+                <button class="copy-code">Copy</button>
                 <button
                     v-if="!expanded"
-                    class="button is-text is-small"
                     @click="isExpanded = false">
                     Hide
                 </button>
@@ -14,7 +13,7 @@
             <pre v-highlight><code :class="lang">{{ code }}</code></pre>
             <button
                 v-if="!isExpanded && !expanded"
-                class="codeview-showcode"
+                class="flex bottom-0 left-0 absolute right-0 top-0 items-center justify-center cursor-pointer w-full"
                 @click="isExpanded = true">
                 <span>Show code</span>
             </button>
