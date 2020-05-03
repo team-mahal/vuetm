@@ -1,8 +1,8 @@
 <template>
-    <div class="codeview">
+    <div class="codeview flex border-l-2">
         <div v-if="title" class="codeview-title">{{ title }}</div>
-        <figure class="highlight " :class="figureClasses">
-            <div class="text-right">
+        <figure class="highlight h-full" :class="figureClasses">
+            <div class="text-right absolute">
                 <button class="copy-code">Copy</button>
                 <button
                     v-if="!expanded"
