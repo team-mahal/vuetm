@@ -57,7 +57,7 @@ export default {
 
 <style>
 .codeview .highlight .codeview-hidecode {
-    position: static;
+    position: static!important;
     height: 2rem;
 }
 .codeview .highlight.is-expanded {

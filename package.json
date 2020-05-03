@@ -53,6 +53,7 @@
 	"author": "jualahmed <md.jual.ah@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
+		"clipboard": "^2.0.6",
 		"nuxt": "^2.12.2"
 	},
 	"repository": {
