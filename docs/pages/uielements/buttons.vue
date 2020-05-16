@@ -1,7 +1,8 @@
 <template>
 <div>
 	<Example :component="progress" :code="progresscode" vertical/>
-
+	
+<div class="hidden">
 	<div class="my-2 text-center">
 		<t-button type="secondary">Secondary</t-button>
 		<t-button type="danger">Danger</t-button>
@@ -79,6 +80,7 @@
 	<div class="text-center mt-3">
 		<t-button type="primary" disabled squared>Secondary</t-button>
     </div>
+</div>
 </div>
 </template>
 
